@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <div class="row justify-content-md-center top">
+    <div class="col col-lg-6 cupcakes">
+      <h3>Cupcakes!</h3>
+    </div>
+    <div class="col col-lg-4">
+      <h4>Add one to the list</h4>
+      <form>
+        <div class="form-group">
+          <label for="flavor">Flavor</label>
+          <input class="form-control" type="text" id="form-cc-flavor">
+        </div>
+        <div class="row form-row">
+          <div class="form-group col col-md-6">
+            <label for="form-cc-size">Size</label>
+            <select class="form-select" id="form-cc-size">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+            </select>
+          </div>
+          <div class="form-group col col-md-6">
+            <label for="rating">Rating: 1-10</label>
+            <input class="form-control" type="number" id="form-cc-rating" min="1" max="10">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input class="form-control" type="text" id="form-cc-image">
+        </div>
+        <input type="submit" class="btn btn-success btn-add-cc" text="Submit">
+        <!--<button class="btn btn-success btn-add-cc">add</button>-->
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

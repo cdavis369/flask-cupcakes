@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+  <div class="row cupcake justify-content-md-center top">
+    <div class="col col-lg-6 cc-pic"></div>
+    <div class="col col-lg-6 cc-details-list">
+      <form>
+        <div class="row form-row">
+          <div class="form-group col col-md-6">
+            <label for="cc-flavor">Flavor</label>
+            <input type="text" class="form-control" id="cc-flavor" placeholder="flavor">
+          </div>
+          <div class="form-group col col-md-3">
+            <label for="cc-rating">Rating</label>
+            <input type="text" class="form-control" id="cc-rating" placeholder="rating">
+          </div>
+          <div class="form-group col col-md-3">
+            <label for="cc-size">Size
+            <select class="form-select" id="cc-size">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+            </select></label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cc-image">Image</label>
+          <input type="text" class="form-control" id="cc-image" placeholder="cupcake picture">
+        </div>
+
+        <button class="btn btn-success btn-edit-form-submit">submit</button>
+        <button class="btn btn-secondary btn-edit-form-back">back</button>
+        <button class="btn btn-danger btn-edit-form-delete">delete</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

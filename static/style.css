@@ -1,0 +1,29 @@
+.top {
+  margin-top: 7rem;
+}
+
+.cc-pic img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.cc-details-list {
+  font-size: larger;
+}
+
+.img-fluid {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+body {
+  background-color: rgb(174, 198, 207);
+}
+
+.col {
+  background-color: rgba(119, 221, 119, .2);
+}
